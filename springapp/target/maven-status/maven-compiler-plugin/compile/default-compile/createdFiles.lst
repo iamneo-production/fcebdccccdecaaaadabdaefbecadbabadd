@@ -1,0 +1,5 @@
+com/examly/springapp/model/Crackers.class
+com/examly/springapp/controller/CrackersController.class
+com/examly/springapp/service/ApiService.class
+com/examly/springapp/SpringappApplication.class
+com/examly/springapp/repository/CrackersRepo.class

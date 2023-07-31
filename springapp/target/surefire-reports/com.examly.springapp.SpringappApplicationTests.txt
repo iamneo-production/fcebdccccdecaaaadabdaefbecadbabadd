@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: com.examly.springapp.SpringappApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 7.902 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+getBynameBrandName  Time elapsed: 0.309 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getBynameBrandName(SpringappApplicationTests.java:143)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getBynameBrandName(SpringappApplicationTests.java:143)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getBynameBrandName(SpringappApplicationTests.java:143)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'test.Crackers' doesn't exist
+	at com.examly.springapp.SpringappApplicationTests.getBynameBrandName(SpringappApplicationTests.java:143)
+
+getByName  Time elapsed: 0.027 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getByName(SpringappApplicationTests.java:133)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getByName(SpringappApplicationTests.java:133)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getByName(SpringappApplicationTests.java:133)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'test.Crackers' doesn't exist
+	at com.examly.springapp.SpringappApplicationTests.getByName(SpringappApplicationTests.java:133)
+
+getBybrandName  Time elapsed: 0.009 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getBybrandName(SpringappApplicationTests.java:123)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getBybrandName(SpringappApplicationTests.java:123)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.examly.springapp.SpringappApplicationTests.getBybrandName(SpringappApplicationTests.java:123)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'test.Crackers' doesn't exist
+	at com.examly.springapp.SpringappApplicationTests.getBybrandName(SpringappApplicationTests.java:123)
+
